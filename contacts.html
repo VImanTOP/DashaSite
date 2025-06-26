@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="practice.html">Практика</a></li>
+                <li><a href="coursework.html">Курсовая</a></li>
+                <li><a href="achievements.html">Достижения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Колледж</h2>
+            <p><strong>Московский колледж транспорта</strong></p>
+            <p>Адрес: г. Москва, Кучин переулок, д.14</p>
+            <p>Метро: Алексеевская</p>
+        </section>
+
+        <section>
+            <h2>Форма обратной связи</h2>
+            <form id="contactForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+                <p id="formStatus"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Расположение</h2>
+            <!-- Пример интеграции карты -->
+            <iframe 
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1aYVxZrWvzJmQgDQnNwOoKlLsTjRkLjS&amp;source=constructor"
+                width="100%" height="400" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Дарья Ерошкина</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
